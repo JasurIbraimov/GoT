@@ -1,17 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import {Link} from 'react-router-dom';
 const HeaderBlock = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin-bottom: 20px
 `;
 
 const HeaderTitle = styled.h3`
     font-size: 24px;
     color: #fff;
     margin: 0;
+    &:hover {
+        transition: .25s all
+        color: rgb(68, 181, 216)
+    }
 `;
 
 const HeaderLinks = styled.ul`
@@ -23,6 +29,15 @@ const HeaderLinks = styled.ul`
     li {
         margin-right: 20px;
         font-size: 18px;
+        border-right: 1px solid #fff;
+        padding: 0 20px 0 0;
+        &:nth-child(3) {
+            border-right: none
+        }
+        &:hover {
+            transition: .25s all
+            color: rgb(68, 181, 216)
+        }
     }
 `;
 
@@ -30,19 +45,19 @@ const Header = () => {
     return (
         <HeaderBlock>
             <HeaderTitle>
-                <a href="#">
+                <Link to="/">
                 Game of Thrones DB
-                </a>
+                </Link>
             </HeaderTitle>
             <HeaderLinks>
                 <li>
-                    <a href="#">Characters</a>
+                    <Link to="/characters/">Characters</Link>
                 </li>
                 <li>
-                    <a href="#">Houses</a>
+                    <Link to="/houses/">Houses</Link>
                 </li>
                 <li>
-                    <a href="#">Books</a>   
+                    <Link to="/books/">Books</Link>   
                 </li>
             </HeaderLinks>
         </HeaderBlock>
