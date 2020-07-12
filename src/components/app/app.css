@@ -1,0 +1,33 @@
+.toggle-btn {
+    padding: 12px;
+    background-color: rgb(68, 181, 216);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-bottom: 40px;
+    outline: none;
+    box-shadow: 0px 0px 30px rgba(256,256,256,.1);
+    cursor: pointer;
+}
+.toggle-btn:focus {
+    outline: none;
+}
+
+.app {
+    background-color: #181717;
+    padding: 50px 0 70px 0;
+    border: 1px solid #fff;
+    min-height: 100vh;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    outline: none;
+}
+body {
+    overflow-x: hidden;
+    background-size: cover;
+    font-size: 16px;
+    height: 100%;	
+}

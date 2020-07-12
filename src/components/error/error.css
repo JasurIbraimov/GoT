@@ -1,0 +1,16 @@
+.errorSvg {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.errorMessage {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #030303;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+}
